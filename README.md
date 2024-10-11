@@ -4,6 +4,5 @@
 - - Maior produtividade, legibilidade, abstração na hora da manutenção, segurança nos inputs
 
 Com isso, foi utilizado 'Services' como um centralizador de ações do Controller, se tornando padrão para todas os models funções básicas de modificação de banco de dados.
-- Redirecionamento para rotas: elas puxam funções do controller, que são puxadas do Services.
-- - Melhora na legibilidade e produtividade da criação de models seguindo regras de negócio específica e não a mercê da arquitetura padrão do Sequelize como ORM.
 
+- Services é uma das camadas principais adicionadas ao MVC básico para aumentar a modularidade da aplicação e deixá-la mais desacoplada e testável. Ela interpreta a camada lógica das regras de negócio como validação, lógica de cálculos e interações entre entidades ficam separadas da camada que maneja as requisições (o controller), e o model fica apenas pela interação com os dados.
